@@ -1,45 +1,53 @@
 <!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <title>Тест</title>
-<head>
-<body
-onload=" var v_date_init = new Date();
-tm_init = v_date_init.getTime();
-test_tm();">
+<script language="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+l=0;
+function dataBase(test) {
+var counter=0;
+if (test.q1[2].checked) {counter++;}
+if (l==0)
+{
+counter=counter;
+}
+else
+{
+counter=0;
+}
+l=l+1;
+document.test.display.value = counter;
+}
+// End Hiding Script -->
+</script>
+</head><body bgcolor="#a6caf0">
+<center>
+<form method="post" name="test">
+<!--ENCTYPE="text/plain"-->
+<h2>Теcт</h2>
+<hr width="75">
+<h3> Винни-Пух це</h3><div align="left"><p style="margin-left: 100px;"><strong>
+<input name="q1" value="11" type="radio">Кабан;<br>
+<input name="q1" value="12" type="radio">Ведмедь;<br>
+<input name="q1" value="13" type="radio">Поросенок;<br>
+</strong></p>
+</div><hr>
 
 
-<div class="ui-widget">
 
-<div class="mys_total">
-<div class="mys_top_space">&nbsp;</div>
-<h1 class="breadcrumb">
-<a href="/tests/iq_humor.php" class="nowrap">Тест</a>
-</h1>
-<div class="clear_both"></div>
-<form action="/tests/iq_humor.php" method="post" id="form_test"><div>
-<input type="hidden" name="tm" value="1270368063" />
+</strong></p>
+</div><hr>
+<table>
+<tbody><tr>
+<td colspan="3"><div align="center"><p><strong><br><hr>Нажми на кнопку &nbsp; для завершения теста:</strong></p></div></td>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" value=" Подсчитать баллы " type="button"></strong></td>
+<td><strong><textarea cols="5" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
 
+</tr>
+</tbody></table>
+</form></center>
 
-<div id="test_tm"></div>
-        </head>
-<div class="quesion">
-<span class="quesion_n">Вопрос</span>. Винни-Пух - это...
-</div>
-<ul>
-<li><input type="radio" name="test[5]" value="0" id="test_5_0" /> <label for="test_5_0">поросенок</label></li>
-<li><input type="radio" name="test[5]" value="1" id="test_5_1" /> <label for="test_5_1">свинья</label></li>
-<li><input type="radio" name="test[5]" value="2" id="test_5_2" /> <label for="test_5_2">кабан</label></li>
-<li><input type="radio" name="test[5]" value="3" id="test_5_3" /> <label for="test_5_3">хряк</label></li>
-<li><input type="radio" name="test[5]" value="4" id="test_5_4" /> <label for="test_5_4">ни одно из вышеперечисленных</label></li>
-</ul>
-<button id = "btn">Відповісти</button>
-        <p class="right hidden" id="right"> <b>Правильна відповідь.</b> 
-        <div class="wrong_div hidden" id="wrong_div">
-            <p class="wrong" id="wrong"><b>Неправильна відповідь</b></p>
-            <button id = "btn1">Подивитись відповідь</button>
-        </div>
-    
-        <p id="answer" class = "hidden"><b>Правильна відповідь:</b>ни одно из вышеперечисленных</p>
-    </div>
-
-</body>
-</html>
+</body></html>
