@@ -1,53 +1,27 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<title>Тест</title>
-<script language="JavaScript">
-<!-- Hide JavaScript from Java-Impaired Browsers
-l=0;
-function dataBase(test) {
-var counter=0;
-if (test.q1[2].checked) {counter++;}
-if (l==0)
-{
-counter=counter;
-}
-else
-{
-counter=0;
-}
-l=l+1;
-document.test.display.value = counter;
-}
-// End Hiding Script -->
-</script>
-</head><body bgcolor="#a6caf0">
-<center>
-<form method="post" name="test">
-<!--ENCTYPE="text/plain"-->
-<h2>Теcт</h2>
-<hr width="75">
-<h3> Винни-Пух це</h3><div align="left"><p style="margin-left: 100px;"><strong>
-<input name="q1" value="11" type="radio">Кабан;<br>
-<input name="q1" value="12" type="radio">Ведмедь;<br>
-<input name="q1" value="13" type="radio">Поросенок;<br>
-</strong></p>
-</div><hr>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Тест</h2>
+        <p>Винни-Пух это?</b> </p>
+        <p><input type="radio" name="year" id="y1">Ведмедь</p>
+        <p><input type="radio" name="year" id="y2">Поросёнок</p>
+        <p><input type="radio" name="year" id="y3">Кабан</p>
+        <p><input type="radio" name="year" id="y4">Пчела</p>
 
-
-
-</strong></p>
-</div><hr>
-<table>
-<tbody><tr>
-<td colspan="3"><div align="center"><p><strong><br><hr>Нажми на кнопку &nbsp; для завершения теста:</strong></p></div></td>
-</tr>
-<tr align="center">
-<td><strong><input name="check" onclick="dataBase(this.form)" value=" Подсчитать баллы " type="button"></strong></td>
-<td><strong><textarea cols="5" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
-
-</tr>
-</tbody></table>
-</form></center>
-
-</body></html>
+        <button id = "btn">Відповісти</button>
+        <p class="right hidden" id="right"> <b>Правильна відповідь.</b> 
+        <div class="wrong_div hidden" id="wrong_div">
+            <p class="wrong" id="wrong"><b>Неправильна відповідь</b></p>
+            <button id = "btn1">Подивитись відповідь</button>
+        </div>
+    
+        <p id="answer" class = "hidden"><b>Правильна відповідь:</b>Ведмедь</p>
+    </div>
+    <script src="js.js"></script>
